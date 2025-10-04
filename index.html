@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Classic Breakout Brick Breaker Game">
+    <title>Breakout - Brick Breaker Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🎮 BREAKOUT</h1>
+            <p class="subtitle">Break all the bricks to win!</p>
+        </header>
+        
+        <div class="game-wrapper">
+            <div class="score-display">
+                <div class="score-item">
+                    <span class="label">SCORE</span>
+                    <span id="score" class="value">0</span>
+                </div>
+                <div class="score-item">
+                    <span class="label">LIVES</span>
+                    <span id="lives" class="value">3</span>
+                </div>
+            </div>
+            
+            <canvas id="gameCanvas"></canvas>
+            
+            <div id="gameMessage" class="game-message hidden">
+                <h2 id="messageText">Game Over</h2>
+                <p id="messageSubtext">Your final score: <span id="finalScore">0</span></p>
+                <button id="restartBtn" class="restart-btn">Play Again</button>
+            </div>
+        </div>
+        
+        <div class="controls-info">
+            <p>🖱️ Use <strong>Arrow Keys</strong> or <strong>Mouse</strong> to control the paddle</p>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
